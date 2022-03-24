@@ -1,0 +1,130 @@
+:root {
+  --dark-blue: #1b1937;
+  --very-dark-blue: #0a0c1c;
+  --purple: #ab5cdb;
+  --white: white;
+
+  --desktop-cutoff: 69.375rem;
+  --radius: 8px;
+}
+
+body {
+  background: var(--very-dark-blue);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  max-width: var(--desktop-cutoff);
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h1 span {
+  color: var(--purple);
+}
+
+.preview-card {
+  box-shadow: 0 20px 20px -10px hsla(233, 28%, 13%, 0.2);
+  display: flex;
+}
+
+.preview-card .textbox {
+  background: var(--dark-blue);
+  border-radius: var(--radius) 0 0 var(--radius);
+  display: flex;
+  flex-basis: 35.625rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4.375rem 4rem;
+}
+
+.preview-card .textbox .textbox-header p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+.preview-card .textbox-info {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.preview-card .textbox-info p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.preview-card .textbox-info p span {
+  font-size: 0.75rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.preview-card picture {
+  background-color: var(--purple);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  width: 33.75rem;
+}
+
+.preview-card picture img {
+  mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 69.375rem) {
+  main {
+    height: auto;
+    margin: 5.25rem auto;
+    max-width: 20rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .preview-card {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .preview-card .textbox {
+    border-radius: 0 0 var(--radius) var(--radius);
+    order: 2;
+    padding: 3rem 1.75rem;
+  }
+
+  .preview-card picture {
+    border-radius: var(--radius) var(--radius) 0 0;
+    order: 1;
+    width: 100%;
+  }
+
+  .preview-card .textbox-info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .preview-card .textbox-info p {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .preview-card .textbox-info > * + * {
+    margin-top: 1.75rem;
+  }
+}

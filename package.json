@@ -1,0 +1,25 @@
+{
+  "name": "stats-preview-card-component",
+  "version": "0.1.0",
+  "description": "Newbie challenge from frontend mentor.",
+  "author": "inThaHouse",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alann13/Stats-Preview-Card-Component.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alann13/Stats-Preview-Card-Component/issues"
+  },
+  "homepage": "https://github.com/alann13/Stats-Preview-Card-Component#readme",
+  "devDependencies": {
+    "vite": "^2.8.6"
+  }
+}
